@@ -6,8 +6,8 @@
 
 //CREAZIONE CLASSE PRINCIPALE
 abstract class Tasse {
-abstract  imponibile!: number;
- abstract tassa!: number;
+   abstract imponibile!: number;
+   abstract tassa!: number
   constructor(
     public codredd: number,
     public redditoannuolordo: number,
