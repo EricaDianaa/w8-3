@@ -62,3 +62,4 @@ console.log(commercialista.getTasseInps());
 console.log(commercialista.getTasseIrpef());
 console.log(commercialista.getUtileTasse(10000));
 console.log(commercialista.getRedditoAnnuoNetto());
+console.log("Hello");
