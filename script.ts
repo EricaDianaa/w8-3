@@ -6,8 +6,8 @@
 
 //CREAZIONE CLASSE PRINCIPALE
 abstract class Tasse {
-  imponibile!: number;
-  tassa!: number;
+abstract  imponibile!: number;
+ abstract tassa!: number;
   constructor(
     public codredd: number,
     public redditoannuolordo: number,
@@ -35,6 +35,8 @@ abstract class Tasse {
 }
 
 class programattore extends Tasse {
+  imponibile!: number;
+  tassa!: number;
   constructor() {
     super(1, 100000, 1000, 56);
   }
@@ -48,6 +50,8 @@ console.log(developer.getUtileTasse(10000));
 console.log(developer.getRedditoAnnuoNetto());
 
 class Barista extends Tasse {
+  imponibile!: number;
+  tassa!: number;
   constructor() {
     super(1, 10000, 100, 50);
   }
@@ -61,6 +65,8 @@ console.log(bar.getUtileTasse(10000));
 console.log(bar.getRedditoAnnuoNetto());
 
 class Commerciale extends Tasse {
+  imponibile!: number;
+  tassa!: number;
   constructor() {
     super(10, 20000, 1001, 30);
   }
