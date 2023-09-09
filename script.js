@@ -31,18 +31,19 @@ class Tasse {
 }
 class programattore extends Tasse {
     constructor() {
-        super(1, 100000, 1000, 56);
+        super(1, 100000, 150, 150);
     }
 }
 let developer = new programattore();
 console.log(developer);
 console.log(developer.getTasseInps());
 console.log(developer.getTasseIrpef());
-console.log(developer.getUtileTasse(10000));
+console.log(developer.getUtileTasse(10));
 console.log(developer.getRedditoAnnuoNetto());
+
 class Barista extends Tasse {
     constructor() {
-        super(1, 10000, 100, 50);
+        super(1, 15000, 0.8, 10);
     }
 }
 let bar = new Barista();
@@ -51,6 +52,7 @@ console.log(bar.getTasseInps());
 console.log(bar.getTasseIrpef());
 console.log(bar.getUtileTasse(10000));
 console.log(bar.getRedditoAnnuoNetto());
+
 class Commerciale extends Tasse {
     constructor() {
         super(10, 20000, 1001, 30);
